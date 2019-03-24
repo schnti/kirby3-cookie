@@ -1,6 +1,6 @@
 # Cookie Approval Plugin
 
-A plugin for [Kirby 2 CMS](http://getkirby.com) that shows an cookie approval banner to use in your templates.
+A plugin for [Kirby 3 CMS](http://getkirby.com) that shows an cookie approval banner to use in your templates.
 
 ![Cookie Approval Plugin Example](./cookie.png)
 
@@ -9,22 +9,21 @@ A plugin for [Kirby 2 CMS](http://getkirby.com) that shows an cookie approval ba
 This plugin is free but if you use it in a commercial project please consider
 
 - [making a donation](https://www.paypal.me/schnti/5) or
-- [buying a Kirby license using this affiliate link](https://a.paddle.com/v2/click/1129/38380?link=1170)
 
 ## Installation
 
 
 ### Download
 
-[Download the files](https://github.com/schnti/kirby3-cookie/archive/master.zip) and place them inside `site/plugins/kirby3-cookie`.
+[Download the files](https://github.com/schnti/kirby3-cookie/archive/master.zip) and place them inside `site/plugins/cookie`.
 
 ### Git Submodule
 You can add the plugin as a Git submodule.
 
     $ cd your/project/root
-    $ git submodule add https://github.com/schnti/kirby3-cookie.git site/plugins/kirby3-cookie
+    $ git submodule add https://github.com/schnti/kirby3-cookie.git site/plugins/cookie
     $ git submodule update --init --recursive
-    $ git commit -am "Add Kirby CodePen plugin"
+    $ git commit -am "Add Kirby Cookie plugin"
 
 Run these commands to update the plugin:
 
@@ -37,7 +36,7 @@ Run these commands to update the plugin:
 ### Composer
 
 ```
-composer require schnti/kirby3-cookie
+composer require schnti/cookie
 ```
 
 ### CSS (SCSS)

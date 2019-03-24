@@ -1,0 +1,138 @@
+$ka-cookie-bg: #222 !default;
+$ka-cookie-color: #fff !default;
+$ka-cookie-link-color: #31a8f0 !default;
+$ka-cookie-link-color-hover: #b2f7ff !default;
+$ka-cookie-btn-bg: #f1d600 !default;
+$ka-cookie-btn-color: #222 !default;
+$ka-cookie-position: bottom-right !default;
+
+#cookie_banner-wrapper {
+  z-index: 9001;
+  position: relative;
+
+  @-webkit-keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(20px);
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  .cookie_container {
+
+    position: fixed;
+
+    @if $ka-cookie-position == 'top-right' or $ka-cookie-position == 'top-left' {
+      top: 0;
+    } @else {
+      bottom: 0;
+    }
+
+    overflow: hidden;
+    padding: 15px;
+    background: $ka-cookie-bg;
+    color: $ka-cookie-color;
+    box-sizing: border-box;
+    font-size: 0.8em;
+
+    @media (max-width: 499px) {
+      left: 0;
+      right: 0;
+    }
+
+    @media (min-width: 500px) {
+
+      width: 300px;
+
+      @if $ka-cookie-position == 'top-right' {
+        top: 20px;
+        right: 20px;
+      } @else if $ka-cookie-position == 'top-left' {
+        top: 20px;
+        left: 20px;
+      } @else if $ka-cookie-position == 'bottom-left' {
+        bottom: 20px;
+        left: 20px;
+      } @else {
+        bottom: 20px;
+        right: 20px;
+      }
+
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 0.9em;
+    }
+
+    .cookie_message {
+
+      a {
+        text-decoration: none;
+        color: $ka-cookie-link-color;
+
+        &:hover {
+          text-decoration: underline;
+          color: lighten($ka-cookie-link-color-hover, 5%);
+        }
+
+        &:active {
+          color: $ka-cookie-link-color-hover;
+        }
+      }
+
+    }
+
+    .cookie_btn {
+      background-color: $ka-cookie-btn-bg;
+      color: $ka-cookie-btn-color;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      padding: 6px 12px;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+
+      &:hover {
+        background-color: lighten($ka-cookie-btn-bg, 5%);
+      }
+    }
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight
+
+  }
+}
+
+@media print {
+  #cookie_banner-wrapper {
+    display: none
+  }
+}

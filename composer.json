@@ -1,0 +1,25 @@
+{
+  "name": "schnti/cookie",
+  "description": "kirby cookie approval plugin",
+  "authors": [
+    {
+      "name": "Timo Schneider",
+      "email": "info@kleiner-als.de",
+      "homepage": "https://kleiner-als.de"
+    }
+  ],
+  "license": "MIT",
+  "version": "0.1.0",
+  "type": "kirby-plugin",
+  "keywords": [
+    "kirby3",
+    "kirby3-cms",
+    "kirby3-plugin"
+  ],
+  "require": {
+    "getkirby/composer-installer": "^1.1"
+  },
+  "extra": {
+    "installer-name": "cookie"
+  }
+}

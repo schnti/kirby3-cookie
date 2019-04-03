@@ -9,6 +9,7 @@ A plugin for [Kirby 3 CMS](http://getkirby.com) that shows an cookie approval ba
 This plugin is free but if you use it in a commercial project please consider
 
 - [making a donation](https://www.paypal.me/schnti/5) or
+- [buying a Kirby license using this affiliate link](https://a.paddle.com/v2/click/1129/48194?link=1170)
 
 ## Installation
 

@@ -13,10 +13,15 @@ This plugin is free but if you use it in a commercial project please consider
 
 ## Installation
 
-
 ### Download
 
 [Download the files](https://github.com/schnti/kirby3-cookie/archive/master.zip) and place them inside `site/plugins/cookie`.
+
+### Composer
+
+```
+composer require schnti/cookie
+```
 
 ### Git Submodule
 You can add the plugin as a Git submodule.
@@ -34,11 +39,7 @@ Run these commands to update the plugin:
     $ git commit -am "Update submodules"
     $ git submodule update --init --recursive
 
-### Composer
 
-```
-composer require schnti/cookie
-```
 
 ### CSS (SCSS)
 ```SCSS
